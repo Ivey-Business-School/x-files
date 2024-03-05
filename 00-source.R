@@ -1,0 +1,16 @@
+library(here)
+library(tidyverse)
+library(glue)
+library(httr)
+library(jsonlite)
+library(janitor)
+library(scales)
+library(googlesheets4)
+library(ggtext)
+library(gt)
+
+dir.create(here("data", today()), showWarnings = FALSE)
+# dir.create(here("outputs", today()), showWarnings = FALSE)
+
+source(here("R", "globals.R"))
+source(here("R", "helpers.R"))
